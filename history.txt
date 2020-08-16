@@ -1,0 +1,267 @@
+    1  yum install git -y
+    2  git --version
+    3  git config --global user.name "srikanth"
+    4  git config --global user.email "srikanth@cloudbots.in"
+    5  git config --list
+    6  mkdir devops-work
+    7  ls
+    8  cd devops-work/
+    9  ls -la
+   10  git init
+   11  ls -la
+   12  ls
+   13  git status
+   14  vi newfile.txt
+   15  git status
+   16  git add newfile.txt 
+   17  git status
+   18  git commit -m "created newfile.txt"
+   19  git status
+   20  git log
+   21  vi newfile.txt 
+   22  git status
+   23  git add newfile.txt 
+   24  git status
+   25  git commit -m "added secondline in newfile"
+   26  git log
+   27  git log
+   28  git diff 892ec85c0b59c40876de77630b8fa459f8e7edb3..02634a46bb9b516a17aa7da47bbaaae0a37b5bcb
+   29  git show 892ec85c0b59c40876de77630b8fa459f8e7edb3
+   30  ls -la
+   31  ll
+   32  cp /etc/passwd .
+   33  ls
+   34  ll
+   35  cat passwd 
+   36  cp /etc/group .
+   37  ls
+   38  ll
+   39  ls -la
+   40  git status
+   41  git add .
+   42  git status
+   43  git commit -m "added passwd,group file"
+   44  git status
+   45  wc -l passwd group
+   46  vi passwd
+   47  wc -l passwd 
+   48  git status
+   49  git commit -am "added a new line in passwd file"
+   50  git status
+   51  git log
+   52  git log --oneline
+   53  git log --oneline
+   54  git log --author
+   55  git log --author "srikanth"
+   56  git log --author "srikanth" --since 2020-08-15
+   57  git log --author "srikanth" --since 2020-08-15 -1
+   58  git log --author "srikanth" --since 2020-08-15 -2
+   59  git log --author "srikanth" --since 2020-08-15 --oneline -2
+   60  ls -la
+   61  touch index.php
+   62  ls
+   63  ll
+   64  ls -la
+   65  one.php
+   66  touch one.php
+   67  ls -la
+   68  touch first.py
+   69  ls -la
+   70  ls -la
+   71  vi .gitignore
+   72  git status
+   73  git add .
+   74  git status
+   75  git commit -m "created .gitignore index.php"
+   76  git status
+   77  cp passwd passwd.php
+   78  git status
+   79  ls -la
+   80  ls -la
+   81  git mv passwd.php passwordfile
+   82  git mv passwd password
+   83  git status
+   84  git commit -m "renamed passwd file password file"
+   85  git status
+   86  git log
+   87  git rm password
+   88  git status
+   89  ls -la
+   90  git commit -m "removed password file"
+   91  git status
+   92  git log
+   93  git log --oneline
+   94  git log --oneline -1
+   95  ls -l
+   96  rm newfile.txt
+   97  ls -l
+   98  git status
+   99  git checkout -- newfile.txt
+  100  git status
+  101  ls -l
+  102  vi newfile.txt 
+  103  git status
+  104  git add newfile.txt 
+  105  git status
+  106  git status
+  107  git log
+  108  git reset HEAD newfile.txt 
+  109  git status
+  110  vi newfile.txt 
+  111  git add .
+  112  git commit -m "changed according to CR"
+  113  git status
+  114  ls -la
+  115  cat newfile.txt 
+  116  ls -l
+  117  vi newfile.txt 
+  118  git status
+  119  git add newfile.txt 
+  120  git commit -m "added thirdline for new"
+  121  git log
+  122  git commit --amend -am "added third line in newfile.txt"
+  123  git log --oneline
+  124  vi newfile.txt 
+  125  git reset --hard 86f28fa
+  126  git log
+  127  git log --oneline
+  128  git status
+  129  ls -l
+  130  cat newfile.txt 
+  131  git log --oneline
+  132  history
+  133  1  yum install git -y
+  134      2  git --version
+  135      3  git config --global user.name "srikanth"
+  136      4  git config --global user.email "srikanth@cloudbots.in"
+  137      5  git config --list
+  138      6  mkdir devops-work
+  139      7  ls
+  140      8  cd devops-work/
+  141      9  ls -la
+  142     10  git init
+  143     11  ls -la
+  144     12  ls
+  145     13  git status
+  146     14  vi newfile.txt
+  147     15  git status
+  148     16  git add newfile.txt
+  149     17  git status
+  150     18  git commit -m "created newfile.txt"
+  151     19  git status
+  152     20  git log
+  153     21  vi newfile.txt
+  154     22  git status
+  155     23  git add newfile.txt
+  156     24  git status
+  157     25  git commit -m "added secondline in newfile"
+  158     26  git log
+  159     27  git log
+  160     28  git diff 892ec85c0b59c40876de77630b8fa459f8e7edb3..02634a46bb9b516a17aa7da47bbaaae0a37b5bcb
+  161     29  git show 892ec85c0b59c40876de77630b8fa459f8e7edb3
+  162     30  ls -la
+  163     31  ll
+  164     32  cp /etc/passwd .
+  165     33  ls
+  166     34  ll
+  167     35  cat passwd
+  168     36  cp /etc/group .
+  169     37  ls
+  170     38  ll
+  171     39  ls -la
+  172     40  git status
+  173     41  git add .
+  174     42  git status
+  175     43  git commit -m "added passwd,group file"
+  176     44  git status
+  177     45  wc -l passwd group
+  178     46  vi passwd
+  179     47  wc -l passwd
+  180     48  git status
+  181     49  git commit -am "added a new line in passwd file"
+  182     50  git status
+  183     51  git log
+  184     52  git log --oneline
+  185     53  git log --oneline
+  186     54  git log --author
+  187     55  git log --author "srikanth"
+  188     56  git log --author "srikanth" --since 2020-08-15
+  189     57  git log --author "srikanth" --since 2020-08-15 -1
+  190     58  git log --author "srikanth" --since 2020-08-15 -2
+  191     59  git log --author "srikanth" --since 2020-08-15 --oneline -2
+  192     60  ls -la
+  193     61  touch index.php
+  194     62  ls
+  195     63  ll
+  196     64  ls -la
+  197     65  one.php
+  198     66  touch one.php
+  199     67  ls -la
+  200     68  touch first.py
+  201     69  ls -la
+  202     70  ls -la
+  203     71  vi .gitignore
+  204     72  git status
+  205     73  git add .
+  206     74  git status
+  207     75  git commit -m "created .gitignore index.php"
+  208     76  git status
+  209     77  cp passwd passwd.php
+  210     78  git status
+  211     79  ls -la
+  212     80  ls -la
+  213     81  git mv passwd.php passwordfile
+  214     82  git mv passwd password
+  215     83  git status
+  216     84  git commit -m "renamed passwd file password file"
+  217     85  git status
+  218     86  git log
+  219     87  git rm password
+  220     88  git status
+  221     89  ls -la
+  222     90  git commit -m "removed password file"
+  223     91  git status
+  224     92  git log
+  225     93  git log --oneline
+  226     94  git log --oneline -1
+  227     95  ls -l
+  228     96  rm newfile.txt
+  229     97  ls -l
+  230     98  git status
+  231     99  git checkout -- newfile.txt
+  232    100  git status
+  233    101  ls -l
+  234    102  vi newfile.txt
+  235    103  git status
+  236    104  git add newfile.txt
+  237    105  git status
+  238    106  git status
+  239    107  git log
+  240    108  git reset HEAD newfile.txt
+  241    109  git status
+  242    110  vi newfile.txt
+  243    111  git add .
+  244    112  git commit -m "changed according to CR"
+  245    113  git status
+  246    114  ls -la
+  247    115  cat newfile.txt
+  248    116  ls -l
+  249    117  vi newfile.txt
+  250    118  git status
+  251    119  git add newfile.txt
+  252    120  git commit -m "added thirdline for new"
+  253    121  git log
+  254    122  git commit --amend -am "added third line in newfile.txt"
+  255    123  git log --oneline
+  256    124  vi newfile.txt
+  257    125  git reset --hard 86f28fa
+  258    126  git log
+  259    127  git log --oneline
+  260    128  git status
+  261    129  ls -l
+  262    130  cat newfile.txt
+  263    131  git log --oneline
+  264    132  history
+  265  history
+  266  pwd
+  267  history > history.txt
